@@ -3,12 +3,9 @@ from django.db import models
 from core.models import BaseMovieModel
 
 
-class AModelA(BaseMovieModel):
-    unrelated_attrib = "hi"
+class ModelA(BaseMovieModel):
+    pass
 
-    actor = models.TextField()
 
-    class Meta:
-        unique_together = (
-            ("title", "sequence"),
-        )
+class OtherModel(models.Model):
+    ticket = models.TextField()
