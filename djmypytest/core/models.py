@@ -2,7 +2,7 @@ from django.db import models
 
 
 class MovieManager(models.Manager):
-    def movie_method(self):
+    def movie_method(self, arg1=None):
         pass
 
 

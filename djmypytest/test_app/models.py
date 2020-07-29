@@ -9,3 +9,6 @@ class ModelA(BaseMovieModel):
 
 class OtherModel(models.Model):
     ticket = models.TextField()
+
+    def a_method(self):
+        ModelA.objects.movie_method(arg1="hi")
